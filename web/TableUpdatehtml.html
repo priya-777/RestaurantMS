@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        <title>Update Table</title>
+        <link rel="stylesheet" type="text/css" href="Style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="JavaScript.js"></script>
+</head>
+<body>
+    >><a href="index.html">Index Page</a> >><a href="LoginAdminhtml.html">Login Admin Page</a> >><a href="What-To-Do.html">What-To-Do Page</a><br>
+    <center class="box">
+    <h1>Table Update</h1>
+    <form name="f1" action="UpdateTable" method="post">
+        <input class="inputbox" type="text" name="NoOfPersons" placeholder="Enter Number of dinners" onkeyup="test(this.value);"/><br><br>
+        <div id="display"></div>
+        Number of tables to add : <input class="inputbox" type="number" value="1" name="CountOfTables"><br><br>
+        <input class="submit" type="submit" value="Add" name="add">
+    </form>
+    </center>
+ </body>
+</html>

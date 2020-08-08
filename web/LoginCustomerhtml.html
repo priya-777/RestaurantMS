@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html >
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="Style.css" />
+        <title>Login-Customer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="JavaScript.js"></script>
+<!--        <style>
+        table
+            {
+                background-color: black;
+                width: 30%;
+                height: 30%;
+                cellspacing :3;
+                border:0;
+            }
+            thead
+            {
+             font-size:25px;
+             font-family: sans-serif;
+             background-color: darkgray;
+             font-weight:lighter
+            }
+            tbody
+            {
+             background-color:bisque;
+             background-color:lightgray;
+             font-size: 15px;
+             font-family: sans-serif;
+             font-weight: bold
+            }
+            input
+            {
+                font-family: sans-serif;
+                font-size:15px;
+                font-style: normal
+                background-color:white;
+            }
+            select
+            {
+                font-family: sans-serif;
+                font-size:15px;
+                font-style: normal
+
+            }
+            .submit{
+                background-color: black;
+                color:white;
+                /*align:center;*/
+            }
+            th,td{
+                height: 20%;
+                /*width: 20%;*/
+            }
+            </style>-->
+    </head>
+    
+    <body>
+        <div class="box">
+        <h2>Registration form</h2>
+        <form method="post" action="LoginCustomer" >
+            <input class="inputbox" name="MailId" type="email" placeholder="Enter Email" /><br><br>
+            <input class="inputbox" name="Number" placeholder="Enter Number"><br><br>
+            Number Of Persons : <select  id="Entries" name="Number of persons" size="1" onmouseover="getEntries()" >
+                    <option>0</option>
+            </select><br><br>
+            Date : <input class="inputbox" type="date" name="Date" ><br><br>
+            Time : <input class="inputbox" type="time" name="Time"><br><br>
+            <input class="submit" type="submit" value="Check Availability"/>
+                        
+<!--        <table >
+                <thead>
+                    <tr>
+                        <th colspan="3">Registration Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MailId</td>
+                        <td>:</td>
+                        <td><input name="MailId" type="email" /></td>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td>:</td>
+                        <td><input name="Number"></td>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <td>Number of persons</td>
+                        <td>:</td>
+                        <td><select id="Entries" name="Number of persons" size="1" onmouseover="getEntries()">
+                    <option>0</option>
+            </select></td>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <td>Date</td>
+                        <td>:</td>
+                        <td><input type="date" name="Date"></td>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <td>Time</td>
+                        <td>:</td>
+                        <td><input type="time" name="Time"></td>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <td colspan="3" align="center" >
+                            <input class="submit" type="submit" value="Check Availability"/>
+                        </td>
+                    </tr>
+        
+                </tbody>
+                </table>-->
+        </form>
+        </div>
+    </body>
+</html>
