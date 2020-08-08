@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+
+        <script type="text/javascript">
+
+            function test(){
+
+                var s1 = document.fname.uname.value;
+                var s2 = document.fname.pass.value;
+
+                if((s1=="")||(s1==null)){
+                    alert("Enter the username");
+                    fname.uname.focus();
+
+                    return false;
+                }
+
+                if((s2=="")||(s2==null)){
+                    alert("Enter the password");
+                    fname.pass.focus();
+
+                    return false;
+                }
+                return true;
+            }
+
+        </script>
+    </head>
+    <body>
+        <form name="fname" method="get" action="HDemo1" onsubmit="return test()">
+            Username :<input type="text" name="uname" /><br/>
+            Password :<input type="password" name="pass"/><br/>
+            <input type="submit" value="submit"/><br/>
+        </form>
+    </body>
+</html>
