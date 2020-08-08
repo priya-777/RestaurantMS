@@ -1,40 +1,25 @@
 <!DOCTYPE html>
-<html>
-	<head>
-
-		<meta charset="ISO-8859-1">
-		<title>Insert title here</title>
-
-        <script type="text/javascript">
-
-            function test(){
-
-                var s1 = document.fname.uname.value;
-                var s2 = document.fname.pass.value;
-
-                if((s1=="")||(s1==null)){
-                    alert("Enter the username");
-                    fname.uname.focus();
-
-                    return false;
-                }
-
-                if((s2=="")||(s2==null)){
-                    alert("Enter the password");
-                    fname.pass.focus();
-
-                    return false;
-                }
-                return true;
-            }
-
-        </script>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>   
+    <head>
+        <link rel="stylesheet" type="text/css" href="Style.css" />
+        <title>Restaurant :)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    
     <body>
-        <form name="fname" method="get" action="HDemo1" onsubmit="return test()">
-            Username :<input type="text" name="uname" /><br/>
-            Password :<input type="password" name="pass"/><br/>
-            <input type="submit" value="submit"/><br/>
+    <center class="box">
+        <form action="LoginCustomerhtml.html">
+            <input class="submit" type="submit" value="Login as a Customer">  
+        </form><br>
+        <form action="LoginAdminhtml.html">
+            <input class="submit" type="submit" value="Login Admin">  
         </form>
+    </center>
     </body>
 </html>
